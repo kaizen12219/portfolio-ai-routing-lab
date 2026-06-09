@@ -1,0 +1,23 @@
+name: Bug
+description: Report a routing or scoring issue
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: route
+    attributes:
+      label: Route input
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true

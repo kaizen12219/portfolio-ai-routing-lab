@@ -1,0 +1,21 @@
+name: Feature
+description: Plan an AI/data routing feature
+title: "feat: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+    validations:
+      required: true
+  - type: textarea
+    id: algorithm
+    attributes:
+      label: Algorithm or data change
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: Portfolio proof
