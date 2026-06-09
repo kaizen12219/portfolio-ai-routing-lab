@@ -1,0 +1,8 @@
+[project]
+name = "portfolio-ai-routing-lab"
+version = "0.1.0"
+description = "Pathfinding and explainable route scoring for AI/data portfolio variants."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
