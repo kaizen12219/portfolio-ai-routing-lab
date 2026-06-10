@@ -29,6 +29,13 @@ class RouterTests(unittest.TestCase):
         result = astar(grid, Point(0, 0), Point(3, 3))
 
         self.assertGreater(score_route(result)["score"], 50)
+        self.assertIn("evidence", score_route(result)["portfolio_signal"])
+
+    def test_missing_path_reports_edge_case_signal(self) -> None:
+        grid = Grid(2, 2, frozenset({Point(1, 0), Point(1, 1)}))
+        result = astar(grid, Point(0, 0), Point(1, 1))
+
+        self.assertEqual(score_route(result)["portfolio_signal"], "edge-case handling")
 
 
 if __name__ == "__main__":
